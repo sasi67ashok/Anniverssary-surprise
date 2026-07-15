@@ -194,85 +194,65 @@ body{
 =========================== */
 
 #marriagePage{
-
     position:fixed;
-
     inset:0;
 
-    background:black;
-
     display:none;
+
+    flex-direction:column;
 
     justify-content:center;
 
     align-items:center;
 
-    flex-direction:column;
+    gap:15px;
+
+    background:black;
+
+    padding:15px;
+
+    overflow:hidden;
 
     z-index:999;
-
 }
 
 #marriageImage{
-
-    width:80%;
-
-    max-width:900px;
-
+    width:min(75vw,650px);
+    max-width:100%;
+    max-height:52vh;
+    object-fit:contain;
     border-radius:25px;
-
     border:8px solid white;
-
     box-shadow:0 0 45px gold;
-
-    animation:zoomImage 2s ease;
-
 }
 
 #message{
-
     color:white;
-
-    font-size:48px;
-
-    margin-top:30px;
-
-    text-shadow:0 0 20px hotpink;
-
-    animation:fadeIn 2s ease;
-
+    font-size:clamp(22px,2.5vw,38px);
+    text-align:center;
+    line-height:1.4;
+    margin:0;
+    padding:0 20px;
 }
 
 #continueBtn{
-
     display:none;
 
-    margin-top:40px;
+    padding:14px 30px;
 
-    padding:18px 45px;
+    font-size:20px;
 
-    font-size:24px;
+    border:none;
+
+    border-radius:12px;
 
     background:#ff1493;
 
     color:white;
 
-    border:none;
-
-    border-radius:15px;
-
     cursor:pointer;
 
-    transition:.3s;
-
-}
-
-#continueBtn:hover{
-
-    background:#ff0080;
-
-    transform:scale(1.08);
-
+    margin:0;
 }
 
 /* ===========================
@@ -1067,6 +1047,37 @@ body{
 
         background:rgba(0,0,0,.35);
 
+    }
+
+}
+
+
+@media (max-height:800px){
+
+    #marriageImage{
+        max-height:50vh;
+    }
+
+    #message{
+        font-size:28px;
+    }
+
+    #continueBtn{
+        font-size:18px;
+        padding:12px 28px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #marriageImage{
+        width:90%;
+        max-height:45vh;
+    }
+
+    #message{
+        font-size:22px;
     }
 
 }
