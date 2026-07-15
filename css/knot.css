@@ -1,0 +1,1072 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:'Segoe UI',sans-serif;
+    background:#000;
+}
+
+/* ===========================
+   TEMPLE PAGE
+=========================== */
+
+#templePage{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+#templeBackground{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.35);
+    z-index:-1;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.title{
+    position:absolute;
+    width:100%;
+    top:25px;
+    text-align:center;
+    color:white;
+    font-size:48px;
+    text-shadow:0 0 20px gold;
+}
+
+.subtitle{
+    position:absolute;
+    width:100%;
+    top:95px;
+    text-align:center;
+    color:white;
+    font-size:24px;
+}
+
+/* ===========================
+   BRIDE
+=========================== */
+
+.brideBox{
+    position:absolute;
+    left:70px;
+    bottom:60px;
+    text-align:center;
+}
+
+#bride{
+    width:340px;
+    height:520px;
+    object-fit:cover;
+    border-radius:20px;
+    border:6px solid white;
+    box-shadow:0 0 35px hotpink;
+}
+
+.brideBox h2{
+    color:white;
+    margin-top:15px;
+    font-size:28px;
+}
+
+/* ===========================
+   GROOM
+=========================== */
+
+.groomBox{
+    position:absolute;
+    right:70px;
+    bottom:60px;
+    text-align:center;
+}
+
+#groom{
+    width:340px;
+    height:520px;
+    object-fit:cover;
+    border-radius:20px;
+    border:6px solid white;
+    box-shadow:0 0 35px deepskyblue;
+}
+
+.groomBox h2{
+    color:white;
+    margin-top:15px;
+    font-size:28px;
+}
+
+/* ===========================
+   MANGALSUTRA
+=========================== */
+
+#mangalsutra{
+
+    position:absolute;
+
+    left:50%;
+
+    top:180px;
+
+    transform:translateX(-50%);
+
+    width:180px;
+
+    cursor:grab;
+
+    transition:.2s;
+
+    z-index:50;
+}
+
+#mangalsutra:hover{
+
+    transform:translateX(-50%) scale(1.08);
+
+}
+
+/* ===========================
+   DROP ZONE
+=========================== */
+
+#dropZone{
+
+    position:absolute;
+
+    left:190px;
+
+    top:200px;
+
+    width:140px;
+
+    height:120px;
+
+    border:3px dashed rgba(255,255,255,.5);
+
+    border-radius:50%;
+
+    opacity:0;
+
+}
+
+/* ===========================
+   FLOWERS
+=========================== */
+
+#flowers{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+   MARRIAGE PAGE
+=========================== */
+
+#marriagePage{
+
+    position:fixed;
+
+    inset:0;
+
+    background:black;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:999;
+
+}
+
+#marriageImage{
+
+    width:80%;
+
+    max-width:900px;
+
+    border-radius:25px;
+
+    border:8px solid white;
+
+    box-shadow:0 0 45px gold;
+
+    animation:zoomImage 2s ease;
+
+}
+
+#message{
+
+    color:white;
+
+    font-size:48px;
+
+    margin-top:30px;
+
+    text-shadow:0 0 20px hotpink;
+
+    animation:fadeIn 2s ease;
+
+}
+
+#continueBtn{
+
+    display:none;
+
+    margin-top:40px;
+
+    padding:18px 45px;
+
+    font-size:24px;
+
+    background:#ff1493;
+
+    color:white;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#continueBtn:hover{
+
+    background:#ff0080;
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes zoomImage{
+
+    from{
+
+        transform:scale(.5);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   PART 2 - FLOWER, HEART, GLOW ANIMATIONS
+========================================== */
+
+/* Floating Flower Petals */
+
+.flower{
+
+    position:absolute;
+
+    top:-60px;
+
+    font-size:30px;
+
+    animation:flowerFall linear forwards;
+
+    pointer-events:none;
+
+    z-index:999;
+
+}
+
+@keyframes flowerFall{
+
+    0%{
+
+        transform:translateY(-50px) rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(110vh) rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Floating Hearts */
+
+.heart{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    font-size:28px;
+
+    color:red;
+
+    animation:heartFloat 6s linear forwards;
+
+    pointer-events:none;
+
+}
+
+@keyframes heartFloat{
+
+    0%{
+
+        transform:translateY(0) scale(.6);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-120vh) scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Golden Sparkles */
+
+.sparkle{
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:gold;
+
+    box-shadow:0 0 20px yellow;
+
+    animation:sparkleAnim 1.4s linear forwards;
+
+}
+
+@keyframes sparkleAnim{
+
+    0%{
+
+        transform:scale(0);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(2);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(0);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Bride Glow */
+
+#bride{
+
+    animation:brideGlow 2s infinite alternate;
+
+}
+
+@keyframes brideGlow{
+
+    from{
+
+        box-shadow:0 0 15px hotpink;
+
+    }
+
+    to{
+
+        box-shadow:0 0 45px deeppink;
+
+    }
+
+}
+
+/* Groom Glow */
+
+#groom{
+
+    animation:groomGlow 2s infinite alternate;
+
+}
+
+@keyframes groomGlow{
+
+    from{
+
+        box-shadow:0 0 15px skyblue;
+
+    }
+
+    to{
+
+        box-shadow:0 0 45px dodgerblue;
+
+    }
+
+}
+
+/* Mangalsutra Pulse */
+
+#mangalsutra{
+
+    animation:pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:translateX(-50%) scale(1);
+
+    }
+
+    50%{
+
+        transform:translateX(-50%) scale(1.08);
+
+    }
+
+    100%{
+
+        transform:translateX(-50%) scale(1);
+
+    }
+
+}
+
+/* Marriage Screen Animation */
+
+#marriagePage.show{
+
+    display:flex;
+
+    animation:screenFade 1.5s ease;
+
+}
+
+@keyframes screenFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Marriage Image Animation */
+
+#marriageImage{
+
+    animation:marriageZoom 2s ease;
+
+}
+
+@keyframes marriageZoom{
+
+    from{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Continue Button */
+
+#continueBtn{
+
+    animation:buttonGlow 2s infinite;
+
+}
+
+@keyframes buttonGlow{
+
+    0%{
+
+        box-shadow:0 0 10px hotpink;
+
+    }
+
+    50%{
+
+        box-shadow:0 0 30px gold;
+
+    }
+
+    100%{
+
+        box-shadow:0 0 10px hotpink;
+
+    }
+
+}
+
+/* Message Animation */
+
+#message{
+
+    animation:textPop 2s;
+
+}
+
+@keyframes textPop{
+
+    0%{
+
+        transform:scale(.5);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Temple Background Slow Zoom */
+
+#templeBackground{
+
+    animation:bgZoom 20s infinite alternate;
+
+}
+
+@keyframes bgZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+/* Overlay Animation */
+
+.overlay{
+
+    animation:overlayBlink 5s infinite;
+
+}
+
+@keyframes overlayBlink{
+
+    0%{
+
+        background:rgba(0,0,0,.35);
+
+    }
+
+    50%{
+
+        background:rgba(0,0,0,.20);
+
+    }
+
+    100%{
+
+        background:rgba(0,0,0,.35);
+
+    }
+
+}
+
+/* ==========================================
+   PART 2 - FLOWER, HEART, GLOW ANIMATIONS
+========================================== */
+
+/* Floating Flower Petals */
+
+.flower{
+
+    position:absolute;
+
+    top:-60px;
+
+    font-size:30px;
+
+    animation:flowerFall linear forwards;
+
+    pointer-events:none;
+
+    z-index:999;
+
+}
+
+@keyframes flowerFall{
+
+    0%{
+
+        transform:translateY(-50px) rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(110vh) rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Floating Hearts */
+
+.heart{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    font-size:28px;
+
+    color:red;
+
+    animation:heartFloat 6s linear forwards;
+
+    pointer-events:none;
+
+}
+
+@keyframes heartFloat{
+
+    0%{
+
+        transform:translateY(0) scale(.6);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-120vh) scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Golden Sparkles */
+
+.sparkle{
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:gold;
+
+    box-shadow:0 0 20px yellow;
+
+    animation:sparkleAnim 1.4s linear forwards;
+
+}
+
+@keyframes sparkleAnim{
+
+    0%{
+
+        transform:scale(0);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(2);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(0);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Bride Glow */
+
+#bride{
+
+    animation:brideGlow 2s infinite alternate;
+
+}
+
+@keyframes brideGlow{
+
+    from{
+
+        box-shadow:0 0 15px hotpink;
+
+    }
+
+    to{
+
+        box-shadow:0 0 45px deeppink;
+
+    }
+
+}
+
+/* Groom Glow */
+
+#groom{
+
+    animation:groomGlow 2s infinite alternate;
+
+}
+
+@keyframes groomGlow{
+
+    from{
+
+        box-shadow:0 0 15px skyblue;
+
+    }
+
+    to{
+
+        box-shadow:0 0 45px dodgerblue;
+
+    }
+
+}
+
+/* Mangalsutra Pulse */
+
+#mangalsutra{
+
+    animation:pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:translateX(-50%) scale(1);
+
+    }
+
+    50%{
+
+        transform:translateX(-50%) scale(1.08);
+
+    }
+
+    100%{
+
+        transform:translateX(-50%) scale(1);
+
+    }
+
+}
+
+/* Marriage Screen Animation */
+
+#marriagePage.show{
+
+    display:flex;
+
+    animation:screenFade 1.5s ease;
+
+}
+
+@keyframes screenFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Marriage Image Animation */
+
+#marriageImage{
+
+    animation:marriageZoom 2s ease;
+
+}
+
+@keyframes marriageZoom{
+
+    from{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Continue Button */
+
+#continueBtn{
+
+    animation:buttonGlow 2s infinite;
+
+}
+
+@keyframes buttonGlow{
+
+    0%{
+
+        box-shadow:0 0 10px hotpink;
+
+    }
+
+    50%{
+
+        box-shadow:0 0 30px gold;
+
+    }
+
+    100%{
+
+        box-shadow:0 0 10px hotpink;
+
+    }
+
+}
+
+/* Message Animation */
+
+#message{
+
+    animation:textPop 2s;
+
+}
+
+@keyframes textPop{
+
+    0%{
+
+        transform:scale(.5);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Temple Background Slow Zoom */
+
+#templeBackground{
+
+    animation:bgZoom 20s infinite alternate;
+
+}
+
+@keyframes bgZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+/* Overlay Animation */
+
+.overlay{
+
+    animation:overlayBlink 5s infinite;
+
+}
+
+@keyframes overlayBlink{
+
+    0%{
+
+        background:rgba(0,0,0,.35);
+
+    }
+
+    50%{
+
+        background:rgba(0,0,0,.20);
+
+    }
+
+    100%{
+
+        background:rgba(0,0,0,.35);
+
+    }
+
+}

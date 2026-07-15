@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:auto;
+}
+
+.container{
+    width:100%;
+    max-width:1400px;
+    text-align:center;
+    padding:30px;
+}
+
+.title{
+    color:white;
+    font-size:55px;
+    margin-bottom:40px;
+    text-shadow:2px 2px 10px rgba(0,0,0,.3);
+}
+
+.family{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:45px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:260px;
+}
+
+.card img{
+    width:230px;
+    height:230px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 0 25px rgba(255,255,255,.6);
+    transition:.4s;
+}
+
+.card img:hover{
+    transform:scale(1.08);
+}
+
+.card h2{
+    margin-top:20px;
+    font-size:38px;
+}
+
+.symbol{
+    font-size:80px;
+    color:white;
+    font-weight:bold;
+}
+
+.message{
+    margin-top:25px;
+}
+
+.message p{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.message h1{
+    font-size:48px;
+}
+
+.message h2{
+    font-size:26px;
+    line-height:40px;
+}

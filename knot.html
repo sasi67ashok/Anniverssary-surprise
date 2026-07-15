@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Tie The Knot ❤️</title>
+
+    <link rel="stylesheet" href="css/knot.css">
+
+</head>
+
+<body>
+
+    <!-- Background Music -->
+
+    <audio id="bgMusic" preload="auto">
+
+        <source src="music/marujenmam.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- Temple Background -->
+
+    <div id="templePage">
+
+        <img src="images/temple.jpg"
+            id="templeBackground">
+
+        <div class="overlay"></div>
+
+        <h1 class="title">
+
+            💍 Tie The Knot 💍
+
+        </h1>
+
+        <p class="subtitle">
+
+            Drag the Mangalsutra to Bride ❤️
+
+        </p>
+
+        <!-- Bride -->
+
+        <div class="brideBox">
+
+            <img
+                src="images/bride.jpg"
+                id="bride">
+
+            <h2>
+
+                👰 Bride
+
+            </h2>
+
+        </div>
+
+        <!-- Groom -->
+
+        <div class="groomBox">
+
+            <img
+                src="images/groom.jpg"
+                id="groom">
+
+            <h2>
+
+                🤵 Groom
+
+            </h2>
+
+        </div>
+
+        <!-- Mangalsutra -->
+
+        <img
+
+            src="images/mangalsutra.png"
+
+            id="mangalsutra"
+
+            draggable="false">
+
+        <!-- Drop Area -->
+
+        <div id="dropZone"></div>
+
+        <!-- Flower Animation -->
+
+        <div id="flowers"></div>
+
+    </div>
+
+    <!-- Marriage Screen -->
+
+    <div id="marriagePage">
+
+        <img
+
+            src="images/marriage.jpg"
+
+            id="marriageImage">
+
+        <div id="message">
+
+            ❤️
+
+            We Are Married Again
+
+            ❤️
+
+        </div>
+
+        <button id="continueBtn">
+
+            Continue ❤️
+
+        </button>
+
+    </div>
+
+<script src="js/knot.js"></script>
+
+
+<button onclick="document.getElementById('bgMusic').play()">
+Play Music
+</button>
+
+</body>
+
+</html>
