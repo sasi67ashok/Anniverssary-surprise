@@ -8,44 +8,37 @@ const text=`My Dearest Husband ❤️,
 
 Happy Anniversary, My Love.
 
-Sometimes I wonder...
-How did a simple meeting turn into the most beautiful chapter of my life?
+Namaku Marriage Aagi 3 Years aagudhu So idhuku yedaila namma neraya face pannitom
 
-From the day you came into my life,
-nothing has ever been the same.
+Love ❤️, Care , Romance , Feelings , Emotions , Fights , Veruppu , Kovam ipdi neraya
 
-You became my best friend,
-my biggest strength,
-my safe place,
-and the person I always want to come home to.
+Aanalum ego illama serndhurukom so idhudhan love pola orutharku oruthar adjust pannitu poradhu
 
-These three years weren't perfect...
-We had misunderstandings,
-we had difficult days,
-and we faced moments that tested us.
+But oru sila Vishayathula nee konjam selfish aa illama ennayum purinji nadandhukanum
 
-But even through every challenge,
-one thing never changed...
+Naa edhumey pudikama verupoda onnum create panni sollamaaten naa enna face panren adhudhan solluven.
 
-My love for you.
+And naa unaku unmaya mattumdhan irundhuruken eppavumey enaku bold aa face to face solradhu dhan valakam
 
-Every laugh we shared...
-Every trip we went on...
-Every late-night conversation...
-Every silly fight...
-Every hug that made everything feel okay...
+adhum from starting of our life to upto now and ever kooda naa apdidhan bold aa dhan irupen
 
-All of them became my favourite memories.
+But nee last 1 Year aa enna romba hurt pannita unnala oru happiness kedachidhu adhudhan yennoda Laddu 
 
-Today, when I look back,
-I don't remember the problems.
+But andha happiness nee enaku kudukaama edhaachi solli hurt pannita 
 
-I remember us...
-Choosing each other,
-again and again.
+You know pregnancy time la husband support physically and mentally illama thaniya irukardhu evlo pain 
+
+theriyumaa i faced a lot from 3 years please try to understand my feeling and dont hurt me.
+
+idhanaala naa dipress aagi vittu poidlam nu lam nenachiruken unkita solliyum iruken 
+
+but yen baby ku parents theva iruku adhuku naa punishment kuduka virumbala.
+
+I Love You and Happy Anniversary....
 
 And now...
 God has blessed us with the most precious gift of all.
+Nee naan aasa patta oru miracle
 
 A tiny little heartbeat...
 A beautiful little miracle...
@@ -62,7 +55,8 @@ most caring,
 and most amazing father.
 
 Seeing you become a dad
-is one of the biggest blessings of my life.
+is one of the biggest blessings of my life
+Naa paakanum nee Daddy aa yen baby ku ennalam pannuva nu.
 
 Our love story is no longer just about
 'You and Me.'
@@ -72,18 +66,7 @@ It's becoming...
 'Us...
 and our little miracle.'
 
-Thank you...
-
-Thank you for every smile you gave me.
-
-Thank you for holding my hand
-through every season of life.
-
-Thank you for believing in us.
-
-No matter where life takes us...
-
-No matter how many years pass...
+Thank you...ō
 
 If I had the chance to choose again...
 
